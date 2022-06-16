@@ -1,0 +1,25 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav-item{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.nav-item-link{
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 25px;
+  color:#DCDCDC ;
+  text-transform: uppercase;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+}
+.nav-item-link:hover{
+  text-decoration: underline;
+  color: #DCDCDC;
+}
+.nav-item-link:visited{
+  color: #DCDCDC;
+}

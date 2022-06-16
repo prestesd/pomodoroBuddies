@@ -1,0 +1,24 @@
+.container-sm{
+    padding-top: 10px;
+}
+.card{
+    background-color: black;
+}
+.card-title{
+    color: #DCDCDC;
+}
+.duration-time{
+    display: flex;
+    flex-direction: column;
+}
+.radio-options-pomodoro{
+    display: flex;
+    flex-direction: column;
+}
+.form-check-label{
+    color: #DCDCDC;
+}
+.send-task-form{
+    display: flex;
+    justify-content: flex-end;
+}

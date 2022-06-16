@@ -1,0 +1,13 @@
+.text-introduction{
+    color: #DCDCDC;
+    text-align: justify;
+}
+.pomodoro-logo-image{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
