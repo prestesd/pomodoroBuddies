@@ -3,7 +3,7 @@ import './Counter.css';
 
 var adjustTimer = null;
 export default function Counter(){
-    const [counter, setCounter] = useState({ min: 25, sec:0});
+    const [counter, setCounter] = useState({ min: 25, sec: 0, pause: false });
     const [buttonState, setButtonState] = useState("Reproduzir");
     const [hiddenState, setHiddenState] = useState("hidden");
 
@@ -22,20 +22,20 @@ export default function Counter(){
     }
 
     function updateCounter(){
-        setCounter(({ min, sec }) => {
+        setCounter(({ min, sec, pause }) => {
             if(min > -1) {
                 if(sec > 0) {
-                    return { min: min, sec: sec - 1 };
+                    return { min: min, sec: sec - 1, pause };
                 } else {
                     if (min - 1 === -1){
-                        resetPomodoro();
+                        resetPomodoro(!pause);
                     }
-                    return { min: min - 1, sec: 59 };
+                    return { min: min - 1, sec: 59, pause };
                 }
             }   
             clearInterval(adjustTimer);
             adjustTimer = null;
-            return { min, sec };
+            return { min, sec, pause };
         })
     }
 
@@ -46,16 +46,17 @@ export default function Counter(){
             return number;    
     }
 
-    function resetPomodoro()
+    function resetPomodoro(pause = false)
     {
+        console.log(pause);
         clearInterval(adjustTimer);
-        setCounter({min: 25, sec: 0});
+        setCounter({min: pause ? 5 : 25, sec:0, pause});
         setButtonState("Reproduzir");
     }
 
     return( 
         <div className="container-sm">
-            <div clasName="card text-white bg-danger">
+            <div className="card text-white ">
                 <div className='card-header applythatGrayColor'>
                     <h1>Temporizador Pomodoro</h1>
                 </div>
@@ -67,8 +68,8 @@ export default function Counter(){
                             <h1 className='applythatGrayColor pointers'>{formatTime(counter.sec)}</h1>
                         </div>
                         <div className='div-btn-start'>
-                            <button class="btn btn-danger btnController" onClick={controlPomodoro}>{buttonState}</button>
-                            <button class="btn btn-danger btnController" onClick={resetPomodoro} hidden={hiddenState}>Recomeçar</button>
+                            <button className="btn btn-danger btnController" onClick={controlPomodoro}>{buttonState}</button>
+                            <button className="btn btn-danger btnController" onClick={()=>resetPomodoro()} hidden={hiddenState}>Recomeçar</button>
                         </div>
                     </div>
                 </div>
