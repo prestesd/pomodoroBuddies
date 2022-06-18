@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import audio from '../assets/yeehaw.mp3';
+
 import './Counter.css';
 
 var adjustTimer = null;
+const yeehaw = new Audio(audio);
+
 export default function Counter(){
     const [counter, setCounter] = useState({ min: 25, sec: 0, pause: false });
     const [buttonState, setButtonState] = useState("Reproduzir");
@@ -28,6 +32,7 @@ export default function Counter(){
                     return { min: min, sec: sec - 1, pause };
                 } else {
                     if (min - 1 === -1){
+                        yeehaw.play();
                         resetPomodoro(!pause);
                     }
                     return { min: min - 1, sec: 59, pause };
@@ -48,7 +53,7 @@ export default function Counter(){
 
     function resetPomodoro(pause = false)
     {
-        console.log(pause);
+       
         clearInterval(adjustTimer);
         setCounter({min: pause ? 5 : 25, sec:0, pause});
         setButtonState("Reproduzir");

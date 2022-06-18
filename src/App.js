@@ -1,7 +1,7 @@
 import './App.css';
+import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 import Counter from './components/Counter';
-import { Routes, Route } from "react-router-dom";
 import Tasks from './components/Tasks';
 import Presentation from './components/Presentation';
 import Statistics from './components/Statistics';

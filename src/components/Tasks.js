@@ -43,6 +43,7 @@ function createTask(){
 
     if (title === "")
         title = "Tarefa " + id;
+    
 
     if (!pomodoroQuantity)
         pomodoroQuantity = "1";
@@ -57,6 +58,8 @@ function createTask(){
 }
 
 function saveTask(newTask){
+    if (tasksArray.length > 0)
+            tasksArray = getAll();
     tasksArray.push(newTask);
     localStorage.setItem("tasksArray", JSON.stringify(tasksArray));
     clearFields();
@@ -64,6 +67,11 @@ function saveTask(newTask){
 
 function clearFields(){
     document.getElementById("input-name-task").value="";
+}
+
+function getAll() {
+    const tasksRaw = localStorage.getItem("tasksArray");
+    return JSON.parse(tasksRaw);
 }
 
     return(
