@@ -4,6 +4,7 @@ import Counter from './components/Counter';
 import { Routes, Route } from "react-router-dom";
 import Tasks from './components/Tasks';
 import Presentation from './components/Presentation';
+import Statistics from './components/Statistics';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/counter" element={<Counter />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="" element={<Presentation />} />
+        <Route path="/statistics" element={<Statistics />} />
       </Routes>
     </div>
   );

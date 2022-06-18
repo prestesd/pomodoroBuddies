@@ -24,7 +24,7 @@ export default function Navbar()
             <Link to='/tasks'  className='nav-item-link'>Tarefas</Link>
         </div>
         <div className='nav-item'>
-            <Link to='#'  className='nav-item-link'>Estatísticas</Link>
+            <Link to='/statistics'  className='nav-item-link'>Estatísticas</Link>
         </div>
         <div className='nav-item-toggle'>
             <a className="nav-item-link"  data-bs-toggle="collapse" href="#navbar-menu" role="button" aria-expanded="false" aria-controls="navbar-menu">

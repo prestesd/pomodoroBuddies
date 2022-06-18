@@ -1,0 +1,60 @@
+.container-sm{
+    border: 1px solid red;
+    height: 70vh;
+}
+.card{
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.applythatGrayColor{
+    color: #DCDCDC;
+}
+.card-header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 40vw;
+    margin: auto;
+    border: 2px solid #7a1821;
+    /* shape-outside: circle();
+    clip-path: circle(); */
+    animation: spinning 5s linear 2s infinite alternate;
+    
+}
+@keyframes spinning {
+    0%   {border-color:red}
+    25%  {border-color:yellow}
+    50%  {border-color:blue}
+    75%  {border-color:green}
+    100% {border-color:red}
+}
+.timer-area{
+    display: flex;
+    flex-direction: column;
+}
+.timer-components{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-btn-start{
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.btnController{
+    margin-right: 5px;
+    z-index: 99999;
+}
+.pointers{
+    font-size:70px;
+}
