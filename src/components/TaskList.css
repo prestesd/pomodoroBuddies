@@ -2,7 +2,7 @@
     color: #DCDCDC;
 }
 .divTaskList{
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .ctrlBtns{
     gap: .25rem;

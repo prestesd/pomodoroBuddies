@@ -15,6 +15,8 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 .counter-wrapper{
     display: flex;
@@ -28,6 +30,23 @@
     clip-path: circle(); */
     animation: spinning 5s linear 2s infinite alternate;
     
+}
+.row-task-choice{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.col-sm-4 {
+    display: flex;
+    justify-content: center;
+}
+
+#list-of-tasks{
+    width: 90%;
+    background-color: black;
+    color: #DCDCDC;
+    border-radius: 5%;
 }
 @keyframes spinning {
     0%   {border-color:red}

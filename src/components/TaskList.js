@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./TaskList.css";
 
 export default function TaskList(){
-    const [allTasks, setAllTasks] = useState([]);
+    const [ allTasks, setAllTasks ] = useState([]);
     const [ updatedTasks, setUpdates] = useState(false);
 
     useEffect(()=>{
