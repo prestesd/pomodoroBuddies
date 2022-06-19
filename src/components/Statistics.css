@@ -58,3 +58,6 @@
 .pointers{
     font-size:70px;
 }
+.divTaskList{
+    overflow-y: scroll;
+}

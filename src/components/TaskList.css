@@ -1,0 +1,9 @@
+.applythatGrayColor{
+    color: #DCDCDC;
+}
+.divTaskList{
+    overflow: scroll;
+}
+.ctrlBtns{
+    gap: .25rem;
+}

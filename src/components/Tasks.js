@@ -35,6 +35,10 @@ function generateGuid() {
     return result;
   }
 
+function clickButton(){
+    document.getElementById("modal-button").click();
+}
+
 function createTask(){
 
     let pomodoroQuantity = markSelectedRadio();
@@ -57,11 +61,12 @@ function createTask(){
         saveTask(newTask);
 }
 
+
 function saveTask(newTask){
-    if (tasksArray.length > 0)
-            tasksArray = getAll();
-    tasksArray.push(newTask);
-    localStorage.setItem("tasksArray", JSON.stringify(tasksArray));
+    const arraytasks = getAll();
+    arraytasks.push(newTask);
+    localStorage.setItem("tasksArray", JSON.stringify(arraytasks));
+    clickButton();
     clearFields();
 }
 
@@ -70,8 +75,8 @@ function clearFields(){
 }
 
 function getAll() {
-    const tasksRaw = localStorage.getItem("tasksArray");
-    return JSON.parse(tasksRaw);
+    const tasksRaw  = localStorage.getItem("tasksArray");
+    return JSON.parse(tasksRaw || "[]");
 }
 
     return(
@@ -113,6 +118,21 @@ function getAll() {
                     </div>
                 </form>
             </div>
+
+                <button type="button" className="btn btn-primary" id ="modal-button" data-bs-toggle="modal" data-bs-target="#info-modal" hidden>
+                </button>
+
+                <div className="modal fade" id="info-modal" tabIndex="-1" aria-labelledby="modal-label" aria-hidden="true">
+                    <div className="modal-dialog modal-sm">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modal-title" id="modal-label">Atividade criada com sucesso!</h5>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
         </div>
     );
 }

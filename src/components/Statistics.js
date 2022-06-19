@@ -4,8 +4,9 @@ import TaskList from './TaskList';
 
 export default function Statistics(){
 
+    
     return(
-        <div className="container-sm">
+        <div className="container-sm divTaskList">
             <div className='card'>
                 <h2 className='card-title'> Suas Tarefas</h2>
             </div>
