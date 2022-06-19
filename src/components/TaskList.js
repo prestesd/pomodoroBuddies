@@ -137,7 +137,6 @@ export default function TaskList(){
                                 </div>  
                             </div>
                     {/* FIM MODAL EDIÇÃO */}
-
                 </div>
             );
         

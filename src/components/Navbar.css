@@ -7,7 +7,10 @@
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.nav-item-link{
+.nav-item-logo{
+  padding-bottom: 5px;
+}
+.nav-item-link, .nav-item-logo{
   text-decoration: none;
   font-weight: 300;
   font-size: 25px;
@@ -16,10 +19,20 @@
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
 }
-.nav-item-link:hover{
+.nav-item-link:hover, .nav-item-logo:hover{
   text-decoration: underline;
   color: #DCDCDC;
 }
-.nav-item-link:visited{
+.nav-item-link:visited, .nav-item-logo:visited{
   color: #DCDCDC;
+}
+@media (max-width: 600px) {
+  .nav-item-toggle{
+    visibility: visible;
+  }
+}
+@media (min-width: 600px) {
+  .nav-item-toggle{
+    visibility: hidden;
+  }
 }
