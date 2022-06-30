@@ -1,6 +1,7 @@
 .container-sm{
     border: 1px solid red;
     height: 70vh;
+    overflow: hidden;
 }
 .card{
     width: 100%;
@@ -22,8 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 40vw;
+    /* height: 25vh;
+    width: 40vw; */
     margin: auto;
     border: 2px solid #7a1821;
     /* shape-outside: circle();

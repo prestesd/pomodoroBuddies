@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 import { useState } from 'react';
 import logo from '../assets/logoPomodoroBuddy.png';
 
-
-var toggler = document.getElementById("toggler");
-
 export default function Navbar()
 {   
     return(

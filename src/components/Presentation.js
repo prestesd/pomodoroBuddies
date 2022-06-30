@@ -31,13 +31,16 @@ export default function Presentation(){
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <div className="d-block w-100 text-introduction">Vá para a aba de tarefas e dê nome às atividades que você pretende realizar. Selecione 1, 2, 3 ou 4 ciclos de pomodoros para realizá-la.</div>
-                            <div className=' pomodoro-logo-image mt-2'>
+                            <div className="d-block w-100 text-introduction">
+                                <p>Vá para a aba de tarefas e dê nome às atividades que você pretende realizar.</p>
+                                <p>Selecione 1, 2, 3 ou 4 ciclos de pomodoros para realizá-la.</p> 
+                            </div>
+                            <div className='pomodoro-logo-image'>
                                 <img
                                 alt='Imagem representativa do ciclo do pomodoro com duração de 25 minutos cada'
                                 src={screenshottasks}
+                                height="250px"
                                 />
-                                
                             </div>
                         </div>
                         <div className="carousel-item">

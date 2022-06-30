@@ -32,7 +32,7 @@ export default function TaskList(){
                 newTask.cicles = radios[i].value;
             }
         }  
-       newTask.status = document.getElementById("task-status"+newTask.id).value === "true";    
+       newTask.completed = document.getElementById("task-status"+newTask.id).value === "true";    
        saveUpdates(newTask);
     }
 
@@ -68,7 +68,7 @@ export default function TaskList(){
                         <ul>
                             <h4><b>Tarefa:</b> { task.title }</h4>
                             <li><b>Tempo destinado: </b>{ task.cicles } Pomodoros</li>
-                            <li><b>Status:</b>  { task.status ? "Concluído" : "Não concluído" }</li>
+                            <li><b>Status:</b>  { task.completed ? "Concluído" : "Não concluído" }</li>
                         </ul>
                     </div>
                     <div className="col-sm-6">
@@ -121,7 +121,7 @@ export default function TaskList(){
                                                     </div>
                                                     <div className="input-group mb-3 duration-time">
                                                         <label htmlFor="status">Status:</label>
-                                                        <select name="status" id={"task-status"+task.id} defaultValue={task.status}>
+                                                        <select name="status" id={"task-status"+task.id} defaultValue={task.completed}>
                                                             <option value="false">Não concluído</option>
                                                             <option value="true">Concluído</option>
                                                         </select>
