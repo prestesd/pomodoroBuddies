@@ -6,7 +6,7 @@ var adjustTimer = null;
 const yeehaw = new Audio(audio);
 
 export default function Counter(){
-    const [ counter, setCounter ]  = useState({ min: 25, sec: 0, pause: false });
+    const [ counter, setCounter ]  = useState({ min: 0, sec: 5, pause: false });
     const [ buttonState, setButtonState ] = useState("Reproduzir");
     const [ hiddenState, setHiddenState ] = useState("hidden");
     const [ taskOptions, setAllTasks ] = useState([]);

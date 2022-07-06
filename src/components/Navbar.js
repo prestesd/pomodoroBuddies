@@ -18,13 +18,13 @@ export default function Navbar()
                 </Link>
             </div>
             <div className='nav-item' id='navbar-options'>
-                <Link to='/counter'  className='nav-item-link'>Temporizador</Link>
+                <Link to='/pomodoroBuddies/counter'  className='nav-item-link'>Temporizador</Link>
             </div>
             <div className='nav-item' id='navbar-options'>
-                <Link to='/tasks'  className='nav-item-link'>Tarefas</Link>
+                <Link to='/pomodoroBuddies/tasks'  className='nav-item-link'>Tarefas</Link>
             </div>
             <div className='nav-item' id='navbar-options'>
-                <Link to='/statistics'  className='nav-item-link'>Estatísticas</Link>
+                <Link to='/pomodoroBuddies/statistics'  className='nav-item-link'>Estatísticas</Link>
             </div>
             <div className='nav-item-toggle'>
                 <a className="nav-item-link"  data-bs-toggle="collapse" href="#navbar-options" role="button" aria-expanded="false" aria-controls="navbar-menu">

@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <Navbar/>
       <Routes>
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/tasks" element={<Tasks />} />
-        <Route path="" element={<Presentation />} />
-        <Route path="/statistics" element={<Statistics />} />
+        <Route path="/pomodoroBuddies/counter" element={<Counter />} />
+        <Route path="/pomodoroBuddies/tasks" element={<Tasks />} />
+        <Route path="/pomodoroBuddies" element={<Presentation />} />
+        <Route path="/pomodoroBuddies/statistics" element={<Statistics />} />
       </Routes>
     </div>
   );
