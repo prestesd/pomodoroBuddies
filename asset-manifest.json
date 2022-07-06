@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pomodoroBuddies/static/css/main.9d7d23f9.css",
+    "main.js": "/pomodoroBuddies/static/js/main.228688d6.js",
+    "static/js/787.e41fb2dc.chunk.js": "/pomodoroBuddies/static/js/787.e41fb2dc.chunk.js",
+    "static/media/logoPomodoroBuddy.png": "/pomodoroBuddies/static/media/logoPomodoroBuddy.b9da30c7f4c85fa757fa.png",
+    "static/media/screenshot-tasks.JPG": "/pomodoroBuddies/static/media/screenshot-tasks.42e67c928673c353a6b9.JPG",
+    "static/media/yeehaw.mp3": "/pomodoroBuddies/static/media/yeehaw.28d9f276480613a96ef6.mp3",
+    "static/media/timer-pomodoro.JPG": "/pomodoroBuddies/static/media/timer-pomodoro.16e58d97ee535d430b29.JPG",
+    "index.html": "/pomodoroBuddies/index.html",
+    "main.9d7d23f9.css.map": "/pomodoroBuddies/static/css/main.9d7d23f9.css.map",
+    "main.228688d6.js.map": "/pomodoroBuddies/static/js/main.228688d6.js.map",
+    "787.e41fb2dc.chunk.js.map": "/pomodoroBuddies/static/js/787.e41fb2dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d7d23f9.css",
+    "static/js/main.228688d6.js"
+  ]
+}
