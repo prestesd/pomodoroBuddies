@@ -1,6 +1,5 @@
 import './Navbar.css';
 import { Link } from "react-router-dom";
-import { useState } from 'react';
 import logo from '../assets/logoPomodoroBuddy.png';
 
 export default function Navbar()
@@ -8,7 +7,7 @@ export default function Navbar()
     return(
         <nav className='navbar' id='navbar-menu'>
             <div className='nav-item-logo'>
-                <Link to='' className='nav-item-link'>
+                <Link to='/pomodoroBuddies' className='nav-item-link'>
                     <img
                     alt='logotipo do pomodoro buddies'
                     width='40px'
